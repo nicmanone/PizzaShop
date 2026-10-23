@@ -1,0 +1,11 @@
+development:
+  adapter: sqlite3
+  database: pizzashop.db
+
+test:
+  adapter: sqlite3
+  database: pizzashop_test.db
+
+production:
+  adapter: sqlite3
+  database: pizzashop.db
