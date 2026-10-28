@@ -20,3 +20,8 @@ end
 get '/about' do
 	erb :about 
 end
+
+get '/pizza/:id' do
+  @pizza = Product.find params[:id]
+  erb :pizza
+end
