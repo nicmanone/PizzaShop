@@ -9,6 +9,9 @@ set :database, "sqlite3:pizzashop.db"
 class Product < ActiveRecord::Base
 end
 
+before do
+  @products = Product.order "created_at DESC"
+end
 
 get '/' do
 	erb :index 
